@@ -1,0 +1,6 @@
+(defun power2 (n p)
+	(if (= p 1)
+		n
+		(* n (power n (- p 1))
+	)
+)

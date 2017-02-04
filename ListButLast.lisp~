@@ -1,0 +1,10 @@
+(defun ListButLast (L)
+  (cond
+    ((null L)
+      nil)
+    ((null (rest L))
+      (first L))
+    (t
+     (cons (first L) (ListButLast (rest L))))
+  )
+)
