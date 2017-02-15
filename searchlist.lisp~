@@ -1,0 +1,9 @@
+(defun search-list (F L)
+  (if (null L)
+      nil
+      (if (funcall F L)
+	  (first L)
+	  (search-list F (rest L))
+      )
+  )	  
+)
